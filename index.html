@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>百度一下，你就知道</title>
+    <link rel="stylesheet" href="./附件/style.css">
+</head>
+
+<body>
+    <div class="web-outer">
+        <div id="head">
+            <div id="top-left">
+                <a href="http://news.baidu.com/" target="_blank">新闻</a>
+                <a href="https://www.hao123.com" target="_blank">hao123</a>
+                <a href="http://map.baidu.com" target="_blank">地图</a>
+                <a href="https://live.baidu.com/" target="_blank">直播</a>
+                <a href="https://haokan.baidu.com/?sfrom=baidu-top" target="_blank">视频</a>
+                <a href="http://tieba.baidu.com" target="_blank">贴吧</a>
+                <a href="http://xueshu.baidu.com" target="_blank">学术</a>
+            </div>
+            <div id="top-right">
+                <div id="top-login-btn">登录</div>
+            </div>
+        </div>
+        <div id="outer-mid">
+            <div id="mid">
+                <div id="logo-outer">
+                    <figure id="logo" title="点击一下，了解更多"></figure>
+                </div>
+                <div id="search-div">
+                    <div id="search-input">
+                        <input>
+                        <div id="search-btn">百度一下</div>
+                    </div>
+                </div>
+                <!--<div id="hot-title">百度热搜</div>
+                <ul id="hot">
+                    <li>
+                        <span class="hot-order hot-order-1">1</span><span class="hot-content">延迟退休实施原则公布</span>
+                        <span class="hot-tag hot">热</span>
+                    </li>
+                    <li>
+                        <span class="hot-order">4</span><span class="hot-content">驻港公署:干预香港事务是痴心妄想</span>
+                    </li>
+                </ul>-->
+                <div id="hot-rank" style="width: 400px;">
+                    <div id="hot-title" style="color: deepskyblue;font-size: 16px;">
+                        <img src="img/game.png" alt="" style="height: 16px;">
+                        热榜之《19374017》分榜
+                        <a id="hot-more" href="">更多
+                            <img src="img/right.png" alt="" style="height: 8px;">
+                        </a>
+                    </div>
+                    <ul id="hot">
+                        <li style="height: 110px; ">
+                            <img class="hot-order-img" src="img/genshin.jpg" alt="">
+                            <span class="hot-order hot-order-1">1</span>
+                            <div class="hot-one-right">
+                                <div class="hot-content">原神</div>
+                                <div>
+                                    <img class="hot-icon" src="img/up.png" alt="">
+                                    <span class="hot-value">热搜指数：324853</span>
+                                </div>
+                                <div style="color: gainsboro; font-size: 12px; float: left;">
+                                    手机游戏
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="hot-order hot-order-2">2</span><span class="hot-content">香肠排队</span>
+                            <img class="hot-icon" src="img/up.png" alt="">
+                            <span class="hot-value">168931</span>
+                        </li>
+                        <li>
+                            <span class="hot-order hot-order-3">3</span><span class="hot-content">王者荣耀</span>
+                            <img class="hot-icon" src="img/heng.png" alt="">
+                            <span class="hot-value">161167</span>
+                        </li>
+                        <li>
+                            <span class="hot-order">4</span><span class="hot-content">我的世界</span>
+                            <img class="hot-icon" src="img/up.png" alt="">
+                            <span class="hot-value">127320</span>
+                        </li>
+                        <li>
+                            <span class="hot-order">5</span><span class="hot-content">和平精英</span>
+                            <img class="hot-icon" src="img/heng.png" alt="">
+                            <span class="hot-value">123379</span>
+                        </li>
+                        <li>
+                            <span class="hot-order">6</span><span class="hot-content">植物大战僵尸</span>
+                            <img class="hot-icon" src="img/up.png" alt="">
+                            <span class="hot-value">88496</span>
+                        </li>
+                        <li>
+                            <span class="hot-order">7</span><span class="hot-content">迷你世界</span>
+                            <img class="hot-icon" src="img/up.png" alt="">
+                            <span class="hot-value">79547</span>
+                        </li>
+                        <li>
+                            <span class="hot-order">8</span><span class="hot-content">光遇</span>
+                            <img class="hot-icon" src="img/heng.png" alt="">
+                            <span class="hot-value">76194</span>
+                        </li>
+                        <li>
+                            <span class="hot-order">9</span><span class="hot-content">泰拉瑞亚</span>
+                            <img class="hot-icon" src="img/up.png" alt="">
+                            <span class="hot-value">54000</span>
+                        </li>
+                        <li>
+                            <span class="hot-order">10</span><span class="hot-content">绝地求生</span>
+                            <img class="hot-icon" src="img/up.png" alt="">
+                            <span class="hot-value">49095</span>
+                        </li>
+                        <!-- TODO: 完成剩余部分的代码 -->
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <div id="footer">本网页仅用于软工实验使用</div>
+        <!-- 引入核心代码，请不要修改 -->
+        <script src="code/index.js"></script>
+    </div>
+    <style>
+        #logo {
+            background-image: url('./img/logo.png');
+        }
+
+        #hot-more {
+            margin-left: 30px;
+            font-size: 12px;
+            color: gray;
+            text-decoration: none;
+        }
+
+        .hot-value {
+            float: right;
+            font-size: 12px;
+            color: gray;
+        }
+
+        .hot-icon {
+            height: 16px;
+            float: right;
+            margin-top: 7px;
+            margin-left: 4px;
+        }
+
+        .hot-order-img {
+            height: 100px;
+            border-radius: 15px;
+            position: absolute;
+        }
+
+        .hot-one-right {
+            position: absolute;
+            left: 120px;
+            line-height: 25px;
+        }
+    </style>
+    <script type="text/javascript" src="./附件/index.js"></script>
+</body>
+
+
+</html>
